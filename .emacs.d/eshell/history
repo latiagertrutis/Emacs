@@ -1,0 +1,82 @@
+asd
+ls
+gcc
+exit
+cd ../lem-in/
+ls
+make
+mkdir -p ../objects/exit
+ls
+cd ..
+ls
+rm -rvf objects/
+ls
+cd lem-in/
+exit
+cd ~/workspace/lem-in/
+ls
+make
+ls
+./lem-in prueba4.map 
+ls srcs/
+make 
+./lem-in prueba4.map 
+make 
+./lem-in prueba4.map 
+make 
+./lem-in prueba4.map 
+make 
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+cat includes/lem-in.h 
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make
+./lem-in prueba4.map 
+make fclean
+exit

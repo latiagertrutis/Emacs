@@ -1,0 +1,18 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Mateo RODRIGUEZ <mrodrigu@e1r9p9.42.fr>
+#
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   Makefile
+#	modified:   includes/lem-in.h
+#	modified:   prueba4.map
+#	modified:   srcs/ft_distribute_ants.c
+#	modified:   srcs/ft_solve_system.c
+#	modified:   srcs/main.c
+#

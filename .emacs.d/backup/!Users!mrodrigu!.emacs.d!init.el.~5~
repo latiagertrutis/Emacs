@@ -195,10 +195,7 @@
   (interactive)
   (insert "\t"))
 (global-set-key (kbd "TAB") 'my-insert-tab-char) ; same as Ctrl+i
-
-;;numero de linea
-(add-hook 'prog-mode-hook 'linum-mode)
-(add-hook 'text-mode-hook 'linum-mode)
+(global-linum-mode t)
 
 ;;copiar linea entera
 (defun copy-line (arg)
@@ -332,7 +329,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(flycheck-clang-include-path (quote ("../includes/")))
  '(package-selected-packages
    (quote
 	(ws-butler use-package undo-tree smart-tabs-mode rainbow-delimiters magit jedi iedit highlight-parentheses highlight-numbers helm-swoop flycheck eshell-prompt-extras color-identifiers-mode autopair anaconda-mode))))
