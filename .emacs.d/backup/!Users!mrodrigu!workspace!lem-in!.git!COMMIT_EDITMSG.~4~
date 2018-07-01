@@ -5,12 +5,10 @@
 # Committer: Mateo RODRIGUEZ <mrodrigu@e3r7p10.42.fr>
 #
 # On branch master
-# Your branch is up-to-date with 'origin/master'.
+# Your branch is ahead of 'origin/master' by 4 commits.
+#   (use "git push" to publish your local commits)
 #
 # Changes to be committed:
-#	modified:   Makefile
-#	modified:   segmentation_fault_en_ft_algorithm.c
-#	modified:   srcs/ft_cuantity_of_ants.c
 #	modified:   srcs/ft_distribute_ants.c
 #	modified:   srcs/ft_solution.c
 #

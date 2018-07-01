@@ -1,0 +1,16 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Mateo RODRIGUEZ <mrodrigu@e1r8p9.42.fr>
+#
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#	modified:   srcs/algorithm_funcs1.c
+#	modified:   srcs/algorithm_funcs2.c
+#	modified:   srcs/ft_abs_double.c
+#	modified:   srcs/ft_algorithm.c
+#

@@ -8,9 +8,7 @@
 # Your branch is up-to-date with 'origin/master'.
 #
 # Changes to be committed:
-#	modified:   Makefile
-#	modified:   segmentation_fault_en_ft_algorithm.c
+#	modified:   prueba1.map
 #	modified:   srcs/ft_cuantity_of_ants.c
-#	modified:   srcs/ft_distribute_ants.c
-#	modified:   srcs/ft_solution.c
+#	modified:   tester.sh
 #

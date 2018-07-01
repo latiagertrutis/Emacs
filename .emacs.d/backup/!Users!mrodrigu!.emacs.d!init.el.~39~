@@ -235,7 +235,6 @@
 (desktop-save-mode 1)
 
 ;;cosas de la 42
-;;header
 (load "~/.emacs.d/plugins/header/list.el")
 (load "~/.emacs.d/plugins/header/string.el")
 (load "~/.emacs.d/plugins/header/comments.el")

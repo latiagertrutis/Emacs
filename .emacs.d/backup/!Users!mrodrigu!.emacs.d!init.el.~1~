@@ -70,6 +70,9 @@
 (use-package jedi
   :ensure t)
 
+(use-package exec-path-from-shell
+  :ensure t)
+
 ;;*****************************configuracion de cosas instaladas*****************************
 
 ;;tema
@@ -169,6 +172,9 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
+;;exec-path-from-shell
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 ;;****************************************configuracion personal**************************************************
 
@@ -188,7 +194,10 @@
   (interactive)
   (insert "\t"))
 (global-set-key (kbd "TAB") 'my-insert-tab-char) ; same as Ctrl+i
-(global-linum-mode t)
+
+;;numero de linea
+(add-hook 'prog-mode-hook 'linum-mode)
+(add-hook 'text-mode-hook 'linum-mode)
 
 ;;copiar linea entera
 (defun copy-line (arg)
@@ -289,6 +298,9 @@
 ;;resaltar linea
 (global-hl-line-mode +1)
 
+;;append to path
+;;(setenv "PATH" (concat (getenv "PATH") ":" (expand-file-name "/Users/mrodrigu/.brew/bin/")))
+
 ;;renombrar un archivo
 (defun rename-file-and-buffer ()
   "Rename the current buffer and file it is visiting."
@@ -319,6 +331,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(flycheck-clang-include-path (quote ("../includes/")))
  '(package-selected-packages
    (quote
 	(ws-butler use-package undo-tree smart-tabs-mode rainbow-delimiters magit jedi iedit highlight-parentheses highlight-numbers helm-swoop flycheck eshell-prompt-extras color-identifiers-mode autopair anaconda-mode))))

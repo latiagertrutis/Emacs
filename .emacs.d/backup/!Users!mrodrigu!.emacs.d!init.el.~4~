@@ -176,7 +176,6 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
-
 ;;****************************************configuracion personal**************************************************
 
 ;;indentacion
@@ -195,7 +194,10 @@
   (interactive)
   (insert "\t"))
 (global-set-key (kbd "TAB") 'my-insert-tab-char) ; same as Ctrl+i
-(global-linum-mode t)
+
+;;numero de linea
+(add-hook 'prog-mode-hook 'linum-mode)
+(add-hook 'text-mode-hook 'linum-mode)
 
 ;;copiar linea entera
 (defun copy-line (arg)
@@ -329,6 +331,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#504545" "#ad8572" "#a9df90" "#aaca86" "#91a0b3" "#ab85a3" "#afcfef" "#bdbdb3"])
+ '(custom-safe-themes
+   (quote
+	("36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" default)))
+ '(flycheck-clang-include-path (quote ("../includes/")))
  '(package-selected-packages
    (quote
 	(ws-butler use-package undo-tree smart-tabs-mode rainbow-delimiters magit jedi iedit highlight-parentheses highlight-numbers helm-swoop flycheck eshell-prompt-extras color-identifiers-mode autopair anaconda-mode))))

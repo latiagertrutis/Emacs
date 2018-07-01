@@ -1,0 +1,31 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: Mateo RODRIGUEZ <mrodrigu@e1r8p9.42.fr>
+#
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   srcs/algorithm_funcs1.c
+#	modified:   srcs/algorithm_funcs2.c
+#	new file:   srcs/check_link_format.c
+#	modified:   srcs/ft_abs_double.c
+#	modified:   srcs/ft_algorithm.c
+#	deleted:    srcs/ft_algorithm2.c
+#	deleted:    srcs/ft_algorithm_debug.c
+#	modified:   srcs/ft_cuantity_of_ants.c
+#	modified:   srcs/ft_depure_graf.c
+#	modified:   srcs/ft_distribute_ants.c
+#	modified:   srcs/ft_line_error.c
+#	deleted:    srcs/ft_map_lector.c
+#	modified:   srcs/ft_prepare_conjunts.c
+#	modified:   srcs/ft_search_paths.c
+#	deleted:    srcs/ft_search_paths2_debug.c
+#	modified:   srcs/ft_set_links.c
+#	modified:   srcs/main.c
+#	new file:   srcs/resize_links.c
+#	modified:   srcs/searcher_funcs.c
+#	deleted:    srcs/test_matrix.c
+#

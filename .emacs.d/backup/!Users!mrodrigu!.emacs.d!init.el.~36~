@@ -176,7 +176,6 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
-
 ;;****************************************configuracion personal**************************************************
 
 ;;indentacion
@@ -298,6 +297,7 @@
 
 ;;resaltar linea
 (global-hl-line-mode +1)
+(set-face-background 'hl-line "#111111")
 
 ;;append to path
 ;;(setenv "PATH" (concat (getenv "PATH") ":" (expand-file-name "/Users/mrodrigu/.brew/bin/")))
@@ -332,6 +332,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#504545" "#ad8572" "#a9df90" "#aaca86" "#91a0b3" "#ab85a3" "#afcfef" "#bdbdb3"])
+ '(custom-safe-themes
+   (quote
+	("36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" default)))
+ '(flycheck-clang-include-path (quote ("../includes/")))
  '(package-selected-packages
    (quote
 	(ws-butler use-package undo-tree smart-tabs-mode rainbow-delimiters magit jedi iedit highlight-parentheses highlight-numbers helm-swoop flycheck eshell-prompt-extras color-identifiers-mode autopair anaconda-mode))))

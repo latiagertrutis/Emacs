@@ -240,6 +240,9 @@
 (load "~/.emacs.d/plugins/header/string.el")
 (load "~/.emacs.d/plugins/header/comments.el")
 (load "~/.emacs.d/plugins/header/header.el")
+;;norminette
+(load "~/.emacs.d/plugins/42devkit/42devkit.el")
+(require '42devkit)
 
 ;;multieshell
 ;;(load "~/.emacs.d/plugins/multi-eshell.el")
