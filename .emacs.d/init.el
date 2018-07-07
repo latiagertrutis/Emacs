@@ -229,6 +229,7 @@
 (global-set-key [home] 'move-beginning-of-line)
 (global-set-key [end] 'move-end-of-line)
 
+(global-set-key [f5] 'revert-buffer)
 
 ;;archivos recientes al inicio
 ;;(init-open-recentf)
@@ -296,7 +297,7 @@
 (setq column-number-mode t)
 
 ;;font size
-(set-face-attribute 'default nil :height 130)
+(set-face-attribute 'default nil :height 100)
 
 ;;indectar todo el buffer
 (defun indent-buffer ()
@@ -365,7 +366,7 @@
  '(custom-safe-themes
    (quote
 	("36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" default)))
- '(flycheck-clang-include-path (quote ("../includes/")))
+ '(flycheck-clang-include-path (quote ("../includes/" "../../includes/")))
  '(package-selected-packages
    (quote
 	(ws-butler use-package undo-tree smart-tabs-mode rainbow-delimiters magit jedi iedit highlight-parentheses highlight-numbers helm-swoop flycheck eshell-prompt-extras color-identifiers-mode autopair anaconda-mode))))
