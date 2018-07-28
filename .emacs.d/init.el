@@ -297,7 +297,7 @@
 (setq column-number-mode t)
 
 ;;font size
-(set-face-attribute 'default nil :height 100)
+(set-face-attribute 'default nil :height 130)
 
 ;;indectar todo el buffer
 (defun indent-buffer ()
@@ -311,6 +311,8 @@
 (global-set-key (kbd "M-<down>") 'windmove-down)
 (global-set-key (kbd "M-<left>") 'windmove-left)
 (global-set-key (kbd "M-<right>") 'windmove-right)
+(global-set-key (kbd "C-M-<up>") 'beginning-of-defun)
+(global-set-key (kbd "C-M-<down>") 'end-of-defun)
 
 ;;guardar backups en carpeta
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
@@ -346,6 +348,19 @@
           (set-visited-file-name new-name t t)))))))
 (global-set-key (kbd "C-c r")  'rename-file-and-buffer)
 
+;;borrar archivo y buffer
+(defun delete-file-and-buffer ()
+  "Kill the current buffer and deletes the file it is visiting."
+  (interactive)
+  (let ((filename (buffer-file-name)))
+    (when filename
+      (if (vc-backend filename)
+          (vc-delete-file filename)
+        (progn
+          (delete-file filename)
+          (message "Deleted file %s" filename)
+          (kill-buffer))))))
+
 ;;abrir un archivo en ventana diferente
 (defun open-file-new-window ()
   (interactive)
@@ -354,6 +369,19 @@
   (helm-find-files nil)
   )
 (global-set-key (kbd "C-c f")  'open-file-new-window)
+
+;;updatear todos los buffers no modificados
+(defun revert-all-buffers ()
+  "Revert all non-modified buffers associated with a file.
+This is to update existing buffers after a Git pull of their underlying files."
+  (interactive)
+  (save-current-buffer
+    (mapc (lambda (b)
+            (set-buffer b)
+            (unless (or (null (buffer-file-name)) (buffer-modified-p))
+              (revert-buffer t t)
+              (message "Reverted %s\n" (buffer-file-name))))
+          (buffer-list))))
 
 (provide 'init)
 (custom-set-variables
